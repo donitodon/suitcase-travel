@@ -6,116 +6,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-}
+body {margin:0;font-family:Arial;background:#f5f5f5;}
 
-/* HEADER */
 header {
-    position: sticky;
-    top: 0;
-    background: #0a2540;
-    color: white;
-    padding: 10px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
+position:sticky; top:0;
+background:#0a2540;color:white;
+padding:10px 40px;
+display:flex;justify-content:space-between;align-items:center;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
+.logo {display:flex;align-items:center;}
+.logo img {height:50px;margin-right:10px;}
 
-.logo img {
-    height: 50px;
-    margin-right: 10px;
-}
+nav a {color:white;margin-left:20px;text-decoration:none;font-weight:bold;}
+nav a:hover {color:#ff7b00;}
 
-nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #ff7b00;
-}
-
-/* HERO */
 .hero {
-    background: linear-gradient(rgba(10,37,64,0.6), rgba(10,37,64,0.6)),
-    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
-    color: white;
-    text-align: center;
-    padding: 140px 20px;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+background-size:cover;
+color:white;text-align:center;padding:140px 20px;
 }
 
-.hero h2 {
-    font-size: 50px;
-}
+section {padding:60px 40px;}
 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #ff7b00;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #e66a00;
-}
-
-/* SECTIUNI */
-section {
-    padding: 60px 50px;
-}
-
-h2 {
-    color: #0a2540;
-}
-
-/* CARDS */
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
+.card:hover {transform:translateY(-5px);}
 
-/* CONTACT */
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
+.price {color:#ff7b00;font-weight:bold;}
 
-/* FOOTER */
 footer {
-    background: #0a2540;
-    color: white;
-    text-align: center;
-    padding: 20px;
+background:#0a2540;color:white;text-align:center;padding:20px;
 }
 </style>
 </head>
@@ -123,97 +57,157 @@ footer {
 <body>
 
 <header>
-    <div class="logo">
-        <img src="logo.png" alt="Logo">
-        <h2>Suitcase Travel</h2>
-    </div>
+<div class="logo">
+<img src="logo.png">
+<h2>Suitcase Travel</h2>
+</div>
 
-    <nav>
-        <a href="#">Acasă</a>
-        <a href="#despre">Despre</a>
-        <a href="#oferta">Ofertă</a>
-        <a href="#speciale">Speciale</a>
-        <a href="#promo">Promo</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+<a href="#">Acasă</a>
+<a href="#oferta">Ofertă</a>
+<a href="#speciale">Speciale</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <section class="hero">
-    <h2>Tu îți faci bagajul.<br>Noi facem aventura.</h2>
-    <p>Descoperă lumea cu noi</p>
-    <a href="#oferta" class="btn">Explorează</a>
+<h1>Tu îți faci bagajul.<br>Noi facem aventura.</h1>
+<p>Vacanțe reale. Experiențe memorabile.</p>
 </section>
 
-<section id="despre">
-<h2>Despre noi</h2>
-<p><strong>Cine suntem:</strong> Agenție modernă de turism.</p>
-<p><strong>Viziune:</strong> Lider în experiențe de călătorie.</p>
-<p><strong>Misiune:</strong> Vacanțe memorabile pentru fiecare client.</p>
-<p><strong>Obiective:</strong></p>
-<ul>
-<li>Extindere internațională</li>
-<li>Servicii premium</li>
-<li>Clienți mulțumiți</li>
-</ul>
-</section>
-
+<!-- OFERTA -->
 <section id="oferta">
-<h2>Oferta noastră</h2>
+<h2>🌍 Ofertele noastre</h2>
 
-<h3>City Break</h3>
 <div class="cards">
-<div class="card"><h3>Paris</h3><p>300€</p></div>
-<div class="card"><h3>Roma</h3><p>280€</p></div>
+
+<div class="card">
+<h3>Barcelona</h3>
+<p>6 zile | Hotel Barcelona Princess</p>
+<p>Tur Sagrada Familia + croazieră</p>
+<p class="price">550€</p>
 </div>
 
-<h3>Sejururi</h3>
-<div class="cards">
-<div class="card"><h3>Grecia</h3><p>700€</p></div>
-<div class="card"><h3>Turcia</h3><p>650€</p></div>
+<div class="card">
+<h3>New York</h3>
+<p>7 zile | Riu Plaza Times Square</p>
+<p>Central Park + Statuia Libertății</p>
+<p class="price">2160€</p>
 </div>
 
-<h3>Circuite</h3>
-<div class="cards">
-<div class="card"><h3>Europa</h3><p>2100€</p></div>
-<div class="card"><h3>Asia</h3><p>2500€</p></div>
+<div class="card">
+<h3>Miami</h3>
+<p>6 nopți | Sentral Alea Hotel</p>
+<p>South Beach + Ocean Drive</p>
+<p class="price">1750€</p>
+</div>
+
+<div class="card">
+<h3>Hawaii</h3>
+<p>6 nopți | Halekulani Hotel</p>
+<p>Surf + vulcani + snorkeling</p>
+<p class="price">3500€</p>
+</div>
+
+<div class="card">
+<h3>Bora Bora</h3>
+<p>Luxury resort 5★</p>
+<p>Lagune + snorkeling + spa</p>
+<p class="price">4200€</p>
+</div>
+
+<div class="card">
+<h3>Los Angeles</h3>
+<p>7 zile | Loews Hollywood</p>
+<p>Hollywood + Universal Studios</p>
+<p class="price">1490€</p>
+</div>
+
+<div class="card">
+<h3>Manila</h3>
+<p>6 nopți | Discovery Primea</p>
+<p>Istorie + cultură asiatică</p>
+<p class="price">1600€</p>
+</div>
+
+<div class="card">
+<h3>Madrid</h3>
+<p>6 zile | Hotel Atlantico</p>
+<p>Palatul Regal + muzee</p>
+<p class="price">950€</p>
+</div>
+
+<div class="card">
+<h3>Granada (Nicaragua)</h3>
+<p>6 nopți | Hotel Real La Merced</p>
+<p>Vulcani + plaje tropicale</p>
+<p class="price">1650€</p>
+</div>
+
+<div class="card">
+<h3>Ankara</h3>
+<p>6 zile | Movenpick Hotel</p>
+<p>Muzee + istorie</p>
+<p class="price">500€</p>
+</div>
+
 </div>
 </section>
 
+<!-- CITY BREAK -->
+<section>
+<h2>🏙️ City Break-uri</h2>
+<div class="cards">
+
+<div class="card"><h3>Viena</h3><p>Crăciun magic</p><p class="price">300€</p></div>
+<div class="card"><h3>Budapesta</h3><p>Băi termale</p><p class="price">966€</p></div>
+<div class="card"><h3>Amsterdam</h3><p>Canale + muzee</p><p class="price">250€</p></div>
+<div class="card"><h3>Berlin</h3><p>Cultură + istorie</p><p class="price">500€</p></div>
+<div class="card"><h3>Porto</h3><p>Vin + peisaje</p><p class="price">915€</p></div>
+<div class="card"><h3>Ljubljana</h3><p>Relaxare</p><p class="price">840€</p></div>
+
+</div>
+</section>
+
+<!-- CIRCUITE -->
+<section>
+<h2>🧭 Circuite</h2>
+
+<div class="card">
+<h3>Circuit Europa</h3>
+<p>16 zile: București – Viena – Italia</p>
+<p>Transport + cazare + ghid</p>
+<p class="price">2100€</p>
+</div>
+
+</section>
+
+<!-- SPECIALE -->
 <section id="speciale">
-<h2>Oferte speciale</h2>
-<p>Last minute și early booking disponibile.</p>
+<h2>🔥 Oferte speciale</h2>
+
+<div class="card">
+<h3>Croazieră Caraibe</h3>
+<p>14 zile | All inclusive</p>
+<p>Miami + Bahamas + Caraibe</p>
+<p class="price">3250€</p>
+</div>
+
 </section>
 
-<section id="promo">
-<h2>Materiale promoționale</h2>
-<ul>
-<li>Banner</li>
-<li>Pliante</li>
-<li>Catalog</li>
-<li>Spot video</li>
-</ul>
-</section>
-
+<!-- CONTACT -->
 <section id="contact">
-<h2>Contact</h2>
+<h2>📞 Contact</h2>
 
-<p><strong>Program:</strong><br>
+<p><b>Program:</b><br>
 L-V: 10:00 – 18:00<br>
 S: 10:00 – 13:00</p>
 
-<p>Email: contact@suitcasetravel.ro</p>
+<p>Email: suitcasetravel007@gmail.com</p>
+<p>Telefon: 0700 000 000</p>
 
-<iframe 
-src="https://maps.google.com/maps?q=bucuresti&t=&z=13&ie=UTF8&iwloc=&output=embed"
+<iframe src="https://maps.google.com/maps?q=bucuresti&t=&z=13&ie=UTF8&iwloc=&output=embed"
 width="100%" height="300"></iframe>
-
-<h3>Formular</h3>
-<form>
-<input type="text" placeholder="Nume">
-<input type="email" placeholder="Email">
-<textarea placeholder="Mesaj"></textarea>
-<button class="btn">Trimite</button>
-</form>
 
 </section>
 
