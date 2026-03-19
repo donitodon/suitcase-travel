@@ -9,9 +9,17 @@
 body {margin:0;font-family:'Segoe UI',sans-serif;background:#fff;}
 
 /* HEADER */
-header.scrolled {
-padding:10px 40px;
-box-shadow:0 4px 15px rgba(0,0,0,0.2);
+header {
+position:fixed;
+top:0;
+width:100%;
+background:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+z-index:1000;
 }
 
 .logo {
@@ -20,10 +28,10 @@ align-items:center;
 gap:15px;
 }
 
-.logo img {height:45px;}
+.logo img {height:60px;}
 
 .slogan {
-font-size:14px;
+font-size:15px;
 font-weight:bold;
 color:#ff7b00;
 }
@@ -130,6 +138,8 @@ text-align:center;padding:20px;
 </section>
 
 <section id="Navigare rapida">
+<div class="title"><h2>Navigare Rapidă</h2></div>
+
 <div style="text-align:center;">
 <a href="despre.html" class="btn">Despre Noi</a>
 <a href="#oferta" class="btn">Oferte</a>
