@@ -1,187 +1,224 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <title>Suitcase Travel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Suitcase Travel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
 
-        header {
-            background: #0a2540;
-            color: white;
-            padding: 15px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    background: #0a2540;
+    color: white;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
 
-        header h1 {
-            margin: 0;
-        }
+.logo {
+    display: flex;
+    align-items: center;
+}
 
-        nav a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
 
-        .hero {
-            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
-            color: white;
-            text-align: center;
-            padding: 120px 20px;
-        }
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-        .hero h2 {
-            font-size: 50px;
-            margin-bottom: 10px;
-        }
+nav a:hover {
+    color: #ff7b00;
+}
 
-        .hero p {
-            font-size: 20px;
-        }
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(10,37,64,0.6), rgba(10,37,64,0.6)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 140px 20px;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #ff7b00;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+.hero h2 {
+    font-size: 50px;
+}
 
-        section {
-            padding: 50px;
-        }
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff7b00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+.btn:hover {
+    background: #e66a00;
+}
 
-        .card {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+/* SECTIUNI */
+section {
+    padding: 60px 50px;
+}
 
-        .card h3 {
-            margin-top: 0;
-        }
+h2 {
+    color: #0a2540;
+}
 
-        footer {
-            background: #0a2540;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* CONTACT */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #0a2540;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Suitcase Travel</h1>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+        <h2>Suitcase Travel</h2>
+    </div>
+
     <nav>
         <a href="#">Acasă</a>
         <a href="#despre">Despre</a>
-        <a href="#oferte">Oferte</a>
+        <a href="#oferta">Ofertă</a>
+        <a href="#speciale">Speciale</a>
+        <a href="#promo">Promo</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
     <h2>Tu îți faci bagajul.<br>Noi facem aventura.</h2>
-    <p>Descoperă lumea cu Suitcase Travel</p>
-    <a href="#oferte" class="btn">Vezi ofertele</a>
+    <p>Descoperă lumea cu noi</p>
+    <a href="#oferta" class="btn">Explorează</a>
 </section>
 
 <section id="despre">
-    <h2>Despre noi</h2>
-    <p>
-        Suntem o agenție de turism fondată în 2025, dedicată creării unor experiențe de călătorie memorabile.
-        Oferim city break-uri, sejururi și circuite adaptate tuturor preferințelor și bugetelor.
-    </p>
-    <p>
-        Ne dorim să inspirăm oamenii să descopere lumea și să transforme fiecare vacanță într-o experiență unică.
-    </p>
+<h2>Despre noi</h2>
+<p><strong>Cine suntem:</strong> Agenție modernă de turism.</p>
+<p><strong>Viziune:</strong> Lider în experiențe de călătorie.</p>
+<p><strong>Misiune:</strong> Vacanțe memorabile pentru fiecare client.</p>
+<p><strong>Obiective:</strong></p>
+<ul>
+<li>Extindere internațională</li>
+<li>Servicii premium</li>
+<li>Clienți mulțumiți</li>
+</ul>
 </section>
 
-<section id="oferte">
-    <h2>Ofertele noastre</h2>
+<section id="oferta">
+<h2>Oferta noastră</h2>
 
-    <div class="cards">
+<h3>City Break</h3>
+<div class="cards">
+<div class="card"><h3>Paris</h3><p>300€</p></div>
+<div class="card"><h3>Roma</h3><p>280€</p></div>
+</div>
 
-        <div class="card">
-            <h3>Barcelona</h3>
-            <p>6 zile în Spania</p>
-            <p>De la <strong>550€</strong></p>
-        </div>
+<h3>Sejururi</h3>
+<div class="cards">
+<div class="card"><h3>Grecia</h3><p>700€</p></div>
+<div class="card"><h3>Turcia</h3><p>650€</p></div>
+</div>
 
-        <div class="card">
-            <h3>New York</h3>
-            <p>7 zile în SUA</p>
-            <p>De la <strong>2160€</strong></p>
-        </div>
-
-        <div class="card">
-            <h3>Hawaii</h3>
-            <p>Vacanță exotică</p>
-            <p>De la <strong>3500€</strong></p>
-        </div>
-
-        <div class="card">
-            <h3>Paris / Viena / Budapesta</h3>
-            <p>City Break Europa</p>
-            <p>De la <strong>300€</strong></p>
-        </div>
-
-        <div class="card">
-            <h3>Bora Bora</h3>
-            <p>Luxury & relaxare</p>
-            <p>De la <strong>4200€</strong></p>
-        </div>
-
-        <div class="card">
-            <h3>Croazieră Caraibe</h3>
-            <p>14 zile</p>
-            <p>De la <strong>3250€</strong></p>
-        </div>
-
-    </div>
+<h3>Circuite</h3>
+<div class="cards">
+<div class="card"><h3>Europa</h3><p>2100€</p></div>
+<div class="card"><h3>Asia</h3><p>2500€</p></div>
+</div>
 </section>
 
-<section>
-    <h2>Pachet recomandat</h2>
-    <div class="card">
-        <h3>Circuit Europa</h3>
-        <p>
-            16 zile prin Europa: București, Budapesta, Viena, Ljubljana, Veneția, Florența, Pisa.
-        </p>
-        <p>Include transport, cazare și tururi ghidate.</p>
-        <p><strong>Preț: 2100€</strong></p>
-    </div>
+<section id="speciale">
+<h2>Oferte speciale</h2>
+<p>Last minute și early booking disponibile.</p>
+</section>
+
+<section id="promo">
+<h2>Materiale promoționale</h2>
+<ul>
+<li>Banner</li>
+<li>Pliante</li>
+<li>Catalog</li>
+<li>Spot video</li>
+</ul>
 </section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: contact@suitcasetravel.ro</p>
-    <p>Telefon: 0700 000 000</p>
-    <p>Website: www.suitcasetravel.ro</p>
+<h2>Contact</h2>
+
+<p><strong>Program:</strong><br>
+L-V: 10:00 – 18:00<br>
+S: 10:00 – 13:00</p>
+
+<p>Email: contact@suitcasetravel.ro</p>
+
+<iframe 
+src="https://maps.google.com/maps?q=bucuresti&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="300"></iframe>
+
+<h3>Formular</h3>
+<form>
+<input type="text" placeholder="Nume">
+<input type="email" placeholder="Email">
+<textarea placeholder="Mesaj"></textarea>
+<button class="btn">Trimite</button>
+</form>
+
 </section>
 
 <footer>
-    <p>© 2026 Suitcase Travel. Toate drepturile rezervate.</p>
+<p>© 2026 Suitcase Travel</p>
 </footer>
 
 </body>
