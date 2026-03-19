@@ -8,6 +8,7 @@
 <style>
 body {margin:0;font-family:'Segoe UI',sans-serif;background:#fff;}
 
+/* HEADER */
 header {
 position:fixed;top:0;width:100%;
 background:white;padding:15px 40px;
@@ -16,13 +17,33 @@ box-shadow:0 2px 10px rgba(0,0,0,0.1);
 z-index:1000;
 }
 
-.logo img {height:45px;}
-
-nav a {
-margin-left:20px;text-decoration:none;
-color:#0a2540;font-weight:bold;
+.logo {
+display:flex;
+align-items:center;
+gap:15px;
 }
 
+.logo img {height:45px;}
+
+.slogan {
+font-size:14px;
+font-weight:bold;
+color:#ff7b00;
+}
+
+nav a {
+margin-left:20px;
+text-decoration:none;
+color:#0a2540;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover {
+color:#ff3c00;
+}
+
+/* HERO */
 .hero {
 height:100vh;
 background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
@@ -32,6 +53,8 @@ display:flex;flex-direction:column;
 justify-content:center;align-items:center;
 color:white;text-align:center;
 }
+
+.hero h1 {font-size:50px;}
 
 section {padding:80px 50px;}
 
@@ -47,26 +70,53 @@ gap:20px;
 background:white;border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 overflow:hidden;
+transition:0.3s;
 }
+
+.card:hover {transform:translateY(-5px);}
 
 .card img {width:100%;height:180px;object-fit:cover;}
 
 .content {padding:15px;}
 
-.price {color:#ff7b00;font-weight:bold;}
+.price {color:#ff3c00;font-weight:bold;}
 
-.btn {background:#ff7b00;color:white;padding:10px 20px;border:none;border-radius:20px;}
+.btn {
+background:#ff7b00;color:white;
+padding:10px 20px;border:none;
+border-radius:20px;
+cursor:pointer;
+}
+
+.social a {
+display:inline-block;
+margin-right:10px;
+padding:10px 15px;
+border-radius:20px;
+color:white;
+text-decoration:none;
+}
+
+.instagram {background:#E1306C;}
+.tiktok {background:#000;}
 
 .contact {background:#f5f5f5;}
 
-footer {background:#0a2540;color:white;text-align:center;padding:20px;}
+footer {
+background:#0a2540;color:white;
+text-align:center;padding:20px;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="logo"><img src="logo.png"></div>
+<div class="logo">
+<img src="logo.png">
+<div class="slogan">Tu îți faci bagajul, noi facem aventura!</div>
+</div>
+
 <nav>
 <a href="#">Acasă</a>
 <a href="#despre">Despre noi</a>
@@ -77,7 +127,7 @@ footer {background:#0a2540;color:white;text-align:center;padding:20px;}
 </header>
 
 <section class="hero">
-<h1>Explorează lumea cu noi</h1>
+<h1>Explorează lumea cu Suitcase Travel</h1>
 <p>Vacanțe memorabile create pentru tine</p>
 </section>
 
@@ -86,26 +136,14 @@ footer {background:#0a2540;color:white;text-align:center;padding:20px;}
 <div class="title"><h2>Despre noi</h2></div>
 
 <p><b>Cine suntem?</b><br>
-Suntem o agenție de turism fondată în anul 2025, dedicată creării unor experiențe de călătorie memorabile pentru clienții noștri.
+Suntem o agenție de turism fondată în anul 2025, dedicată creării unor experiențe de călătorie memorabile pentru clienții noștri. Oferim pachete turistice variate, adaptate diferitelor preferințe, de la city break-uri și vacanțe de relaxare până la aventuri culturale și excursii tematice. Ne dorim să inspirăm oamenii să descopere lumea și să se bucure de destinații autentice. Prin profesionalism, pasiune pentru călătorii și atenție la detalii, transformăm fiecare vacanță într-o experiență unică.
 </p>
 
-<p><b>Viziune:</b><br>
-Să devenim o agenție modernă și accesibilă care inspiră oamenii să descopere lumea.
+<p><b>Viziunea și misiunea noastră</b><br>
+Viziunea și misiunea Suitcase Travel își propune să devină o agenție de turism modernă și accesibilă, care inspiră oamenii să descopere lumea într-un mod simplu, sigur și memorabil. Dorim să promovăm călătoriile ca experiențe care aduc oamenii mai aproape de culturi diferite, de natură și de noi perspective asupra lumii.
+<br><br>
+Misiunea agenției Suitcase Travel este de a oferi clienților informații, inspirație și propuneri de vacanțe atractive, adaptate diferitelor preferințe și bugete. Prin creativitatea și implicarea elevilor care au creat agenția, ne propunem să promovăm destinații turistice interesante și să demonstrăm că pasiunea pentru turism, organizarea și colaborarea pot transforma ideile în experiențe de călătorie de neuitat.
 </p>
-
-<p><b>Misiune:</b><br>
-Oferim vacanțe atractive adaptate diferitelor preferințe și bugete.
-</p>
-
-<p><b>Obiective:</b></p>
-<ul>
-<li>Creșterea numărului de clienți</li>
-<li>Extinderea ofertelor</li>
-<li>Promovarea turismului</li>
-</ul>
-
-<p><b>Organigramă:</b><br>
-Manager → Consultant → Marketing</p>
 
 </section>
 
@@ -113,31 +151,25 @@ Manager → Consultant → Marketing</p>
 <section id="oferta">
 <div class="title"><h2>Oferta agenției</h2></div>
 
-<h3>City Break</h3>
 <div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"><div class="content"><h4>Barcelona</h4><p class="price">550€</p></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4"><div class="content"><h4>Madrid</h4><p class="price">950€</p></div></div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba">
+<div class="content">
+<h4>Barcelona</h4>
+<p class="price">550€</p>
+</div>
 </div>
 
-<h3>Sejururi</h3>
-<div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"><div class="content"><h4>Miami</h4><p class="price">1750€</p></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21"><div class="content"><h4>Hawaii</h4><p class="price">3500€</p></div></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1549921296-3c3c2b4b0c3d">
+<div class="content">
+<h4>New York</h4>
+<p class="price">2160€</p>
+</div>
 </div>
 
-<h3>Circuite</h3>
-<div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b"><div class="content"><h4>Europa</h4><p class="price">2100€</p></div></div>
 </div>
-
-<h3>Croaziere</h3>
-<div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"><div class="content"><h4>Caraibe</h4><p class="price">3250€</p></div></div>
-</div>
-
-<h3>Oferte speciale</h3>
-<p>Last minute și early booking disponibile!</p>
-
 </section>
 
 <!-- PROMO -->
@@ -159,10 +191,13 @@ Manager → Consultant → Marketing</p>
 <div class="title"><h2>Contact</h2></div>
 
 <p>Email: suitcasetravel007@gmail.com</p>
-<p>Telefon: 0700 000 000</p>
 
-<p><b>Social Media:</b><br>
-Instagram | Facebook | TikTok</p>
+<div class="social">
+<a href="https://www.instagram.com/suitcase_travel._official/" target="_blank" class="instagram">Instagram</a>
+<a href="https://www.tiktok.com/@suitcase_travel.1" target="_blank" class="tiktok">TikTok</a>
+</div>
+
+<br>
 
 <iframe src="https://maps.google.com/maps?q=bucuresti&t=&z=13&ie=UTF8&iwloc=&output=embed"
 width="100%" height="300"></iframe>
