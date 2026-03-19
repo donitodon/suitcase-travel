@@ -6,262 +6,174 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
-    margin:0;
-    font-family: 'Segoe UI', sans-serif;
-    background:#ffffff;
-}
+body {margin:0;font-family:'Segoe UI',sans-serif;background:#fff;}
 
-/* HEADER */
 header {
-    position:fixed;
-    width:100%;
-    top:0;
-    background:white;
-    padding:15px 50px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-    z-index:1000;
+position:fixed;top:0;width:100%;
+background:white;padding:15px 40px;
+display:flex;justify-content:space-between;align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+z-index:1000;
 }
 
 .logo img {height:45px;}
 
 nav a {
-    margin-left:25px;
-    text-decoration:none;
-    color:#0a2540;
-    font-weight:600;
+margin-left:20px;text-decoration:none;
+color:#0a2540;font-weight:bold;
 }
 
-<nav>
-<a href="#">Acasă</a>
-<a href="#despre">Despre noi</a>
-<a href="#oferte">Oferte</a>
-<a href="#contact">Contact</a>
-</nav>
-
-/* HERO */
 .hero {
-    <section id="despre" style="background:#f9f9f9;">
-<div class="title">
-<h2>Despre noi</h2>
-</div>
-
-<div style="max-width:900px;margin:auto;line-height:1.7;font-size:17px;">
-
-<p>
-Suntem o agenție de turism fondată în anul 2025, dedicată creării unor experiențe de călătorie memorabile pentru clienții noștri. Oferim pachete turistice variate, adaptate diferitelor preferințe, de la city break-uri și vacanțe de relaxare până la aventuri culturale și excursii tematice. Ne dorim să inspirăm oamenii să descopere lumea și să se bucure de destinații autentice. Prin profesionalism, pasiune pentru călătorii și atenție la detalii, transformăm fiecare vacanță într-o experiență unică.
-</p>
-
-<h3 style="margin-top:40px;color:#0a2540;">Viziunea și Misiunea Noastră</h3>
-
-<p>
-Suitcase Travel își propune să devină o agenție de turism modernă și accesibilă, care inspiră oamenii să descopere lumea într-un mod simplu, sigur și memorabil. Dorim să promovăm călătoriile ca experiențe care aduc oamenii mai aproape de culturi diferite, de natură și de noi perspective asupra lumii.
-</p>
-
-<p>
-Misiunea agenției Suitcase Travel este de a oferi clienților informații, inspirație și propuneri de vacanțe atractive, adaptate diferitelor preferințe și bugete. Prin creativitatea și implicarea elevilor care au creat agenția, ne propunem să promovăm destinații turistice interesante și să demonstrăm că pasiunea pentru turism, organizarea și colaborarea pot transforma ideile în experiențe de călătorie de neuitat.
-</p>
-
-</div>
-</section>
-    height:100vh;
-    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
-    background-size:cover;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    color:white;
-    text-align:center;
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+background-size:cover;
+display:flex;flex-direction:column;
+justify-content:center;align-items:center;
+color:white;text-align:center;
 }
 
-.hero h1 {
-    font-size:55px;
-}
+section {padding:80px 50px;}
 
-.hero p {
-    font-size:20px;
-}
+.title {text-align:center;margin-bottom:40px;}
 
-.btn {
-    margin-top:20px;
-    padding:12px 30px;
-    background:#ff7b00;
-    color:white;
-    text-decoration:none;
-    border-radius:30px;
-}
-
-/* SECTION */
-section {
-    padding:80px 60px;
-}
-
-.title {
-    text-align:center;
-    margin-bottom:50px;
-}
-
-.title h2 {
-    font-size:32px;
-    color:#0a2540;
-}
-
-/* CARDS */
 .cards {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
 }
 
 .card {
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 10px 20px rgba(0,0,0,0.1);
-    background:white;
+background:white;border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+overflow:hidden;
 }
 
-.card img {
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
+.card img {width:100%;height:180px;object-fit:cover;}
 
-.content {
-    padding:20px;
-}
+.content {padding:15px;}
 
-.price {
-    color:#ff7b00;
-    font-weight:bold;
-    font-size:22px;
-}
+.price {color:#ff7b00;font-weight:bold;}
 
-.btn-small {
-    display:inline-block;
-    margin-top:10px;
-    padding:8px 15px;
-    background:#0a2540;
-    color:white;
-    border-radius:20px;
-    text-decoration:none;
-}
+.btn {background:#ff7b00;color:white;padding:10px 20px;border:none;border-radius:20px;}
 
-/* CONTACT */
-.contact {
-    background:#f5f5f5;
-}
+.contact {background:#f5f5f5;}
 
-footer {
-    background:#0a2540;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
+footer {background:#0a2540;color:white;text-align:center;padding:20px;}
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">
-<img src="logo.png">
-</div>
-
+<div class="logo"><img src="logo.png"></div>
 <nav>
 <a href="#">Acasă</a>
-<a href="#oferte">Oferte</a>
+<a href="#despre">Despre noi</a>
+<a href="#oferta">Ofertă</a>
+<a href="#promo">Promo</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
 <h1>Explorează lumea cu noi</h1>
-<p>Vacanțe premium create pentru tine</p>
-<a href="#oferte" class="btn">Vezi ofertele</a>
+<p>Vacanțe memorabile create pentru tine</p>
 </section>
 
-<!-- OFERTE -->
-<section id="oferte">
-<div class="title">
-<h2>Destinații populare</h2>
-</div>
+<!-- DESPRE NOI -->
+<section id="despre">
+<div class="title"><h2>Despre noi</h2></div>
 
+<p><b>Cine suntem?</b><br>
+Suntem o agenție de turism fondată în anul 2025, dedicată creării unor experiențe de călătorie memorabile pentru clienții noștri.
+</p>
+
+<p><b>Viziune:</b><br>
+Să devenim o agenție modernă și accesibilă care inspiră oamenii să descopere lumea.
+</p>
+
+<p><b>Misiune:</b><br>
+Oferim vacanțe atractive adaptate diferitelor preferințe și bugete.
+</p>
+
+<p><b>Obiective:</b></p>
+<ul>
+<li>Creșterea numărului de clienți</li>
+<li>Extinderea ofertelor</li>
+<li>Promovarea turismului</li>
+</ul>
+
+<p><b>Organigramă:</b><br>
+Manager → Consultant → Marketing</p>
+
+</section>
+
+<!-- OFERTA -->
+<section id="oferta">
+<div class="title"><h2>Oferta agenției</h2></div>
+
+<h3>City Break</h3>
 <div class="cards">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba">
-<div class="content">
-<h3>Barcelona</h3>
-<p>6 zile | Hotel Barcelona Princess</p>
-<p>Sagrada Familia • Croazieră • Gotic</p>
-<p class="price">550€</p>
-<a href="#" class="btn-small">Rezervă</a>
-</div>
+<div class="card"><img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"><div class="content"><h4>Barcelona</h4><p class="price">550€</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4"><div class="content"><h4>Madrid</h4><p class="price">950€</p></div></div>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1549921296-3c3c2b4b0c3d">
-<div class="content">
-<h3>New York</h3>
-<p>7 zile | Times Square</p>
-<p>Central Park • Empire State</p>
-<p class="price">2160€</p>
-<a href="#" class="btn-small">Rezervă</a>
-</div>
+<h3>Sejururi</h3>
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"><div class="content"><h4>Miami</h4><p class="price">1750€</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21"><div class="content"><h4>Hawaii</h4><p class="price">3500€</p></div></div>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
-<div class="content">
-<h3>Miami</h3>
-<p>Plaje exotice</p>
-<p>South Beach • Ocean Drive</p>
-<p class="price">1750€</p>
-<a href="#" class="btn-small">Rezervă</a>
-</div>
+<h3>Circuite</h3>
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b"><div class="content"><h4>Europa</h4><p class="price">2100€</p></div></div>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21">
-<div class="content">
-<h3>Hawaii</h3>
-<p>Vacanță exotică</p>
-<p>Surf • Vulcani • Snorkeling</p>
-<p class="price">3500€</p>
-<a href="#" class="btn-small">Rezervă</a>
-</div>
+<h3>Croaziere</h3>
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"><div class="content"><h4>Caraibe</h4><p class="price">3250€</p></div></div>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
-<div class="content">
-<h3>Croazieră Caraibe</h3>
-<p>14 zile all inclusive</p>
-<p>Bahamas • Caraibe</p>
-<p class="price">3250€</p>
-<a href="#" class="btn-small">Rezervă</a>
-</div>
-</div>
+<h3>Oferte speciale</h3>
+<p>Last minute și early booking disponibile!</p>
 
-</div>
+</section>
+
+<!-- PROMO -->
+<section id="promo">
+<div class="title"><h2>Materiale de promovare</h2></div>
+
+<ul>
+<li>Afișe</li>
+<li>Pliante</li>
+<li>Catalog</li>
+<li>Spot publicitar</li>
+<li>Banner</li>
+</ul>
+
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
-<div class="title">
-<h2>Contact</h2>
-</div>
+<div class="title"><h2>Contact</h2></div>
 
-<p><b>Program:</b> L-V 10:00–18:00 | S 10:00–13:00</p>
 <p>Email: suitcasetravel007@gmail.com</p>
+<p>Telefon: 0700 000 000</p>
+
+<p><b>Social Media:</b><br>
+Instagram | Facebook | TikTok</p>
 
 <iframe src="https://maps.google.com/maps?q=bucuresti&t=&z=13&ie=UTF8&iwloc=&output=embed"
 width="100%" height="300"></iframe>
+
+<h3>Cerere ofertă</h3>
+<form>
+<input type="text" placeholder="Nume" style="width:100%;padding:10px;"><br><br>
+<input type="email" placeholder="Email" style="width:100%;padding:10px;"><br><br>
+<textarea placeholder="Mesaj" style="width:100%;padding:10px;"></textarea><br><br>
+<button class="btn">Trimite</button>
+</form>
 
 </section>
 
