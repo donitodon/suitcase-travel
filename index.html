@@ -6,61 +6,131 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {margin:0;font-family:Arial;background:#f5f5f5;}
+body {
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:#ffffff;
+}
 
+/* HEADER */
 header {
-background:#0a2540;color:white;
-padding:15px 40px;
-display:flex;justify-content:space-between;align-items:center;
+    position:fixed;
+    width:100%;
+    top:0;
+    background:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    z-index:1000;
 }
 
-.logo img {height:50px;}
+.logo img {height:45px;}
 
-nav a {color:white;margin-left:20px;text-decoration:none;font-weight:bold;}
+nav a {
+    margin-left:25px;
+    text-decoration:none;
+    color:#0a2540;
+    font-weight:600;
+}
 
+/* HERO */
 .hero {
-background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
-background-size:cover;
-color:white;text-align:center;
-padding:120px 20px;
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
 }
 
-section {padding:50px;}
+.hero h1 {
+    font-size:55px;
+}
 
+.hero p {
+    font-size:20px;
+}
+
+.btn {
+    margin-top:20px;
+    padding:12px 30px;
+    background:#ff7b00;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+}
+
+/* SECTION */
+section {
+    padding:80px 60px;
+}
+
+.title {
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title h2 {
+    font-size:32px;
+    color:#0a2540;
+}
+
+/* CARDS */
 .cards {
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
 }
 
 .card {
-background:white;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    background:white;
 }
 
 .card img {
-width:100%;
-height:200px;
-object-fit:cover;
+    width:100%;
+    height:220px;
+    object-fit:cover;
 }
 
 .content {
-padding:15px;
+    padding:20px;
 }
 
 .price {
-color:#ff7b00;
-font-size:20px;
-font-weight:bold;
+    color:#ff7b00;
+    font-weight:bold;
+    font-size:22px;
 }
 
-ul {padding-left:18px;}
+.btn-small {
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 15px;
+    background:#0a2540;
+    color:white;
+    border-radius:20px;
+    text-decoration:none;
+}
+
+/* CONTACT */
+.contact {
+    background:#f5f5f5;
+}
 
 footer {
-background:#0a2540;color:white;text-align:center;padding:20px;
+    background:#0a2540;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 </style>
 </head>
@@ -80,164 +150,84 @@ background:#0a2540;color:white;text-align:center;padding:20px;
 </header>
 
 <section class="hero">
-<h1>Tu îți faci bagajul.<br>Noi facem aventura.</h1>
+<h1>Explorează lumea cu noi</h1>
+<p>Vacanțe premium create pentru tine</p>
+<a href="#oferte" class="btn">Vezi ofertele</a>
 </section>
 
+<!-- OFERTE -->
 <section id="oferte">
-<h2>🌍 Oferte complete</h2>
+<div class="title">
+<h2>Destinații populare</h2>
+</div>
 
 <div class="cards">
 
-<!-- BARCELONA -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba">
 <div class="content">
-<h3>Barcelona, Spania</h3>
-<p><b>Perioada:</b> 10-16 mai 2026</p>
-<p><b>Durata:</b> 6 zile</p>
-<p><b>Hotel:</b> Barcelona Princess</p>
-
-<p><b>Activități:</b></p>
-<ul>
-<li>Sagrada Familia</li>
-<li>Monserrat</li>
-<li>Croazieră pe mare</li>
-<li>Cartierul Gotic</li>
-</ul>
-
-<p><b>Include:</b> avion, transfer, cazare, mic dejun</p>
+<h3>Barcelona</h3>
+<p>6 zile | Hotel Barcelona Princess</p>
+<p>Sagrada Familia • Croazieră • Gotic</p>
 <p class="price">550€</p>
+<a href="#" class="btn-small">Rezervă</a>
 </div>
 </div>
 
-<!-- NEW YORK -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1549921296-3c3c2b4b0c3d">
 <div class="content">
-<h3>New York, SUA</h3>
-<p><b>Perioada:</b> 10-17 martie 2027</p>
-<p><b>Durata:</b> 7 zile</p>
-<p><b>Hotel:</b> Riu Plaza Times Square</p>
-
-<ul>
-<li>Statuia Libertății</li>
-<li>Central Park</li>
-<li>Times Square</li>
-<li>Empire State</li>
-</ul>
-
-<p><b>Include:</b> avion, transfer, cazare, mic dejun</p>
+<h3>New York</h3>
+<p>7 zile | Times Square</p>
+<p>Central Park • Empire State</p>
 <p class="price">2160€</p>
+<a href="#" class="btn-small">Rezervă</a>
 </div>
 </div>
 
-<!-- MIAMI -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
 <div class="content">
-<h3>Miami, SUA</h3>
-<p><b>Perioada:</b> 22-28 iunie 2026</p>
-
-<ul>
-<li>South Beach</li>
-<li>Ocean Drive</li>
-<li>Bayside</li>
-<li>Wynwood Walls</li>
-</ul>
-
-<p><b>Hotel:</b> Sentral Alea</p>
-<p><b>Include:</b> avion + transfer + mic dejun</p>
+<h3>Miami</h3>
+<p>Plaje exotice</p>
+<p>South Beach • Ocean Drive</p>
 <p class="price">1750€</p>
+<a href="#" class="btn-small">Rezervă</a>
 </div>
 </div>
 
-<!-- HAWAII -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21">
 <div class="content">
 <h3>Hawaii</h3>
-<p><b>Perioada:</b> 24-31 august 2026</p>
-
-<ul>
-<li>Surf Waikiki</li>
-<li>Vulcani</li>
-<li>Snorkeling</li>
-</ul>
-
-<p><b>Hotel:</b> Halekulani</p>
-<p><b>Include:</b> avion + transfer + mic dejun</p>
+<p>Vacanță exotică</p>
+<p>Surf • Vulcani • Snorkeling</p>
 <p class="price">3500€</p>
+<a href="#" class="btn-small">Rezervă</a>
 </div>
 </div>
 
-<!-- BORA BORA -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
-<div class="content">
-<h3>Bora Bora</h3>
-<p><b>Perioada:</b> 5-11 august 2026</p>
-
-<ul>
-<li>Snorkeling</li>
-<li>Croazieră apus</li>
-<li>Spa</li>
-</ul>
-
-<p><b>Hotel:</b> InterContinental Resort</p>
-<p><b>All inclusive</b></p>
-<p class="price">4200€</p>
-</div>
-</div>
-
-<!-- CIRCUIT EUROPA -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b">
-<div class="content">
-<h3>Circuit Europa</h3>
-<p><b>Perioada:</b> 1-17 iunie 2026</p>
-<p><b>Durata:</b> 16 zile</p>
-
-<ul>
-<li>București</li>
-<li>Budapesta</li>
-<li>Viena</li>
-<li>Italia</li>
-</ul>
-
-<p><b>Include:</b> autocar + zbor + hotel + ghid</p>
-<p class="price">2100€</p>
-</div>
-</div>
-
-<!-- CROAZIERA -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
 <div class="content">
 <h3>Croazieră Caraibe</h3>
-<p><b>Perioada:</b> 15-28 august 2026</p>
-<p><b>Durata:</b> 14 zile</p>
-
-<ul>
-<li>Bahamas</li>
-<li>St. Lucia</li>
-<li>Guadeloupe</li>
-</ul>
-
-<p><b>Include:</b> all inclusive + avion + hotel</p>
+<p>14 zile all inclusive</p>
+<p>Bahamas • Caraibe</p>
 <p class="price">3250€</p>
+<a href="#" class="btn-small">Rezervă</a>
 </div>
 </div>
 
 </div>
 </section>
 
-<section id="contact">
-<h2>📞 Contact</h2>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<div class="title">
+<h2>Contact</h2>
+</div>
 
-<p><b>Program:</b><br>
-L-V: 10:00 – 18:00<br>
-S: 10:00 – 13:00</p>
-
+<p><b>Program:</b> L-V 10:00–18:00 | S 10:00–13:00</p>
 <p>Email: suitcasetravel007@gmail.com</p>
 
 <iframe src="https://maps.google.com/maps?q=bucuresti&t=&z=13&ie=UTF8&iwloc=&output=embed"
