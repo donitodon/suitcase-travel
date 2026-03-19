@@ -32,19 +32,29 @@ section {padding:60px 40px;}
 
 .cards {
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
 }
 
 .card {
 background:white;
-padding:20px;
 border-radius:10px;
+overflow:hidden;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
 .card:hover {transform:translateY(-5px);}
+
+.card img {
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card-content {
+padding:15px;
+}
 
 .price {color:#ff7b00;font-weight:bold;}
 
@@ -64,138 +74,113 @@ background:#0a2540;color:white;text-align:center;padding:20px;
 
 <nav>
 <a href="#">Acasă</a>
-<a href="#oferta">Ofertă</a>
-<a href="#speciale">Speciale</a>
+<a href="#oferta">Oferte</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
-<h1>Tu îți faci bagajul.<br>Noi facem aventura.</h1>
-<p>Vacanțe reale. Experiențe memorabile.</p>
+<h1>Tu îți faci bagajul.<br>Noi facem aventura!</h1>
 </section>
 
-<!-- OFERTA -->
 <section id="oferta">
 <h2>🌍 Ofertele noastre</h2>
 
 <div class="cards">
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba">
+<div class="card-content">
 <h3>Barcelona</h3>
-<p>6 zile | Hotel Barcelona Princess</p>
-<p>Tur Sagrada Familia + croazieră</p>
+<p>6 zile | Sagrada Familia</p>
 <p class="price">550€</p>
 </div>
+</div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1549921296-3c3c2b4b0c3d">
+<div class="card-content">
 <h3>New York</h3>
-<p>7 zile | Riu Plaza Times Square</p>
-<p>Central Park + Statuia Libertății</p>
+<p>7 zile | Times Square</p>
 <p class="price">2160€</p>
 </div>
+</div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<div class="card-content">
 <h3>Miami</h3>
-<p>6 nopți | Sentral Alea Hotel</p>
-<p>South Beach + Ocean Drive</p>
+<p>Plaje exotice</p>
 <p class="price">1750€</p>
 </div>
+</div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21">
+<div class="card-content">
 <h3>Hawaii</h3>
-<p>6 nopți | Halekulani Hotel</p>
-<p>Surf + vulcani + snorkeling</p>
+<p>Surf & vulcani</p>
 <p class="price">3500€</p>
 </div>
+</div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<div class="card-content">
 <h3>Bora Bora</h3>
-<p>Luxury resort 5★</p>
-<p>Lagune + snorkeling + spa</p>
+<p>Luxury & relax</p>
 <p class="price">4200€</p>
 </div>
+</div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad">
+<div class="card-content">
 <h3>Los Angeles</h3>
-<p>7 zile | Loews Hollywood</p>
-<p>Hollywood + Universal Studios</p>
+<p>Hollywood</p>
 <p class="price">1490€</p>
 </div>
+</div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86">
+<div class="card-content">
 <h3>Manila</h3>
-<p>6 nopți | Discovery Primea</p>
-<p>Istorie + cultură asiatică</p>
+<p>Cultură asiatică</p>
 <p class="price">1600€</p>
 </div>
+</div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4">
+<div class="card-content">
 <h3>Madrid</h3>
-<p>6 zile | Hotel Atlantico</p>
-<p>Palatul Regal + muzee</p>
+<p>Artă & istorie</p>
 <p class="price">950€</p>
 </div>
+</div>
 
 <div class="card">
-<h3>Granada (Nicaragua)</h3>
-<p>6 nopți | Hotel Real La Merced</p>
-<p>Vulcani + plaje tropicale</p>
+<img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c">
+<div class="card-content">
+<h3>Nicaragua</h3>
+<p>Vulcani & natură</p>
 <p class="price">1650€</p>
 </div>
+</div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1544989164-31c3b2f0b7d1">
+<div class="card-content">
 <h3>Ankara</h3>
-<p>6 zile | Movenpick Hotel</p>
-<p>Muzee + istorie</p>
+<p>Istorie turcească</p>
 <p class="price">500€</p>
 </div>
+</div>
 
 </div>
 </section>
 
-<!-- CITY BREAK -->
-<section>
-<h2>🏙️ City Break-uri</h2>
-<div class="cards">
-
-<div class="card"><h3>Viena</h3><p>Crăciun magic</p><p class="price">300€</p></div>
-<div class="card"><h3>Budapesta</h3><p>Băi termale</p><p class="price">966€</p></div>
-<div class="card"><h3>Amsterdam</h3><p>Canale + muzee</p><p class="price">250€</p></div>
-<div class="card"><h3>Berlin</h3><p>Cultură + istorie</p><p class="price">500€</p></div>
-<div class="card"><h3>Porto</h3><p>Vin + peisaje</p><p class="price">915€</p></div>
-<div class="card"><h3>Ljubljana</h3><p>Relaxare</p><p class="price">840€</p></div>
-
-</div>
-</section>
-
-<!-- CIRCUITE -->
-<section>
-<h2>🧭 Circuite</h2>
-
-<div class="card">
-<h3>Circuit Europa</h3>
-<p>16 zile: București – Viena – Italia</p>
-<p>Transport + cazare + ghid</p>
-<p class="price">2100€</p>
-</div>
-
-</section>
-
-<!-- SPECIALE -->
-<section id="speciale">
-<h2>🔥 Oferte speciale</h2>
-
-<div class="card">
-<h3>Croazieră Caraibe</h3>
-<p>14 zile | All inclusive</p>
-<p>Miami + Bahamas + Caraibe</p>
-<p class="price">3250€</p>
-</div>
-
-</section>
-
-<!-- CONTACT -->
 <section id="contact">
 <h2>📞 Contact</h2>
 
@@ -203,8 +188,7 @@ background:#0a2540;color:white;text-align:center;padding:20px;
 L-V: 10:00 – 18:00<br>
 S: 10:00 – 13:00</p>
 
-<p>Email: suitcasetravel007@gmail.com</p>
-<p>Telefon: 0700 000 000</p>
+<p>Email: contact@suitcasetravel.ro</p>
 
 <iframe src="https://maps.google.com/maps?q=bucuresti&t=&z=13&ie=UTF8&iwloc=&output=embed"
 width="100%" height="300"></iframe>
