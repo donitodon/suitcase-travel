@@ -39,3 +39,12 @@
   text-align: center;
   margin-top: 20px;
 }
+.videos {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.videos iframe {
+  margin: 10px;
+  border-radius: 10px;
+}
